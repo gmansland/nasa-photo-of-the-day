@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import PostHeader from "./postHeader.js";
 import PostDesc from "./postDesc.js";
 
@@ -17,7 +17,7 @@ export default function Post(props) {
     <div className='postDiv'>
       <PostHeader title={props.title} date={props.date} />
 
-      <img src={props.url} className='nasaImg' />
+      <img src={props.url} className='nasaImg' alt="PicOfTheDay" />
 
       <PostDesc desc={props.desc} />
     </div>
